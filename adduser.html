@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TechSupporter | Add Client</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="shorcut icon" type="image/x-icon" href="images/favicon.png">
+        <link rel="stylesheet" href="secondary.css">
+    </head>
+    <body>
+        <header>    
+            <h1>
+                <a href="index.html"><img id="homeicon" src="images/home.png" alt="Home"></a>TechSupporter
+                <a href="adduser.html"><img id="usericon" src="images/add-user.png" alt="Add User"></a>
+                <a href="addtask.html"><img id="taskicon" src="images/add-task.png" alt="Add Task"></a>
+                <img id="menuicon" src="images/menuicon.png" onclick="myFunction()" alt="Menu"><ul id='dropdown' class='dropdown-content'>
+                <li><a href='index.html'>Front Page</a></li>
+                <li ><a href="#">Exit</a></li>
+                </ul>
+            </h1>
+        </header>
+        <form id="addclientform" method="post" action="addclienttodb.php">
+            <h2>Add New Client</h2><br>
+            <input type="text" name="firstname" placeholder="First Name">&nbsp;&nbsp;&nbsp;<input type="text" name="lastname" placeholder="Last Name"><br><br>
+            <input type="text" name="address" size="27" placeholder="Address">&nbsp;<input type="text" name="number" size="4" placeholder="No">&nbsp;<input type="text" name="pocode" size="5" placeholder="PO code"><br><br>
+            <textarea rows="4" cols="40" name="comments" placeholder="Comments"></textarea><br><br>
+            <input type="text" name="mobile" size="10" placeholder="Mobile number"><br><br>
+            <input type="email" name="email" size="27" placeholder="e-mail" required><br><br><br><br>
+            <input type="submit" class="button" name="submitclient" value="Submit">
+            <input type="button" class="button" onclick="location.href='index.html';" value="Cancel"/>
+        </form>    
+        <a href="map.html"><img id="mapsicon" src="images/gmaps.png" alt="Map"></a>
+        <hr>
+        <p id="date">
+        <script>
+            var d = new Date();
+            document.getElementById("date").innerHTML = d.toDateString();
+        </script>
+        </p>
+    </body>
+</html>

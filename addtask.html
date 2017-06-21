@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TechSupporter | Add Task</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="shorcut icon" type="image/x-icon" href="images/favicon.png">
+        <link rel="stylesheet" href="secondary.css">
+        <link rel="stylesheet" href="datepicker.css">
+        <link rel="stylesheet" href="normalize.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+          $( function() {
+            $( "#datepicker" ).datepicker();
+            $( "#anim" ).on( "change", function() {
+              $( "#datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
+            });
+          } );
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="index.html"><img id="homeicon" src="images/home.png" alt="Home"></a>TechSupporter
+                <a href="adduser.html"><img id="usericon" src="images/add-user.png" alt="Add User"></a>
+                <a href="addtask.html"><img id="taskicon" src="images/add-task.png" alt="Add Task"></a>
+                <img id="menuicon" src="images/menuicon.png" alt="Menu"><ul  class='dropdown-content'>
+                <li><a href='index.html'>Front Page</a></li>
+                <li ><a href="#">Exit</a></li>
+                </ul>
+            </h1>
+        </header>
+        <section>
+            <form id="newtaskform" method="post" action="addtasktodb.php">
+                <h2>Add New Task</h2>
+                <br>
+                <p class="radioinput">
+                    <input type="radio" name="newtask" value="inhouse"><b>In House</b> <br><br>
+                    <input type="radio" name="newtask" value="onsite"><b>On Site</b> <br><br>
+                </p>
+                <input type="text" name="tasktitle" placeholder="Task title"><br><br><br>
+                <textarea rows="4" cols="50" name="problemdesc" placeholder="Description of the problem"></textarea><br><br>
+                <input type="text" id="datepicker" name="date" placeholder="Pick a date:"><br><br>
+                <br>
+                <input type="text" autocomplete="on" name="customer" placeholder="Customer">
+                <br><br><br><br>
+                <input type="submit" class="button" name="submittask" value="Submit">
+                <input type="button" class="button" onclick="location.href='index.html';" value="Cancel"/>
+            </form>
+        </section>
+        <a href="map.html"><img id="mapsicon" src="images/gmaps.png" alt="Map"></a>
+        <hr>
+        <p id="date">
+        <script>
+            var d = new Date();
+            document.getElementById("date").innerHTML = d.toDateString();
+        </script>
+        </p>
+        <script>
+           function myFunction() {
+                document.getElementById("dropdown").classList.toggle("show");
+            }
+        </script>
+    </body>
+</html>
