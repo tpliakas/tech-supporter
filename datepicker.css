@@ -13,6 +13,7 @@
 	text-decoration: none;
 }
 /* DatePicker Table */
+/*
 .ui-datepicker table {
 	width: 100%;
 }
@@ -30,6 +31,7 @@
 	border-style: solid;
 	border-color: #111;
 }
+*/
 .ui-datepicker-title {
 	text-align: center;
 }
