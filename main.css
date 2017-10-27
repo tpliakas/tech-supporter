@@ -1,31 +1,16 @@
-@font-face {
-    font-family: myFont;
-    src: url("assets/SourceSansPro.ttf");
-    font-weight: normal;
-    font-style: normal; 
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=greek');
 
 body {
 
-    font-family: myFont, sans-serif;
-    background: url('images/bg1.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #c5c1c0;
 }
 
 header {
     position: fixed; /* Set the navbar to fixed position */
     top: 0px; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    background-color: #331a00;
+    background-color: #1d2731;
     color: #fff;
     text-align: center;
     padding-bottom: 2px;
@@ -34,7 +19,6 @@ header {
     font-weight: bold;
     left: 0px;
     margin-bottom: 20px;
-    border-bottom: 3px solid white;
 }
 
 nav {
@@ -44,13 +28,11 @@ nav {
 
 nav ul {
     list-style-type: none;
-    background-color: #331a00;
+    background-color: #1a2930;
     color: #fff;
-    width: 40%;
+    width: 20%;
     display: inline-block;
-    padding: 0;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
+    padding: 15px 0px 15px 0px;
 }
 
 @media screen and (max-width: 480px) {
@@ -87,19 +69,22 @@ nav ul li {
     height: auto;
 }
 
+hr {
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+
 #datehr {
     position: fixed;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #1a2930;
     margin-bottom: 0px; 
     margin-top: 0px;
     margin-left: 5%;
     width: 90%;
     bottom: 4em;
-    color: #fff;
 }
 
 #date {
-    color: #fff;
+    color: #1a2930;
     position: fixed;
     bottom: 0.5em;
     text-align: center;
@@ -120,7 +105,7 @@ nav ul li {
     max-width: 100%;
     max-height: auto;
     filter: brightness(80%);
-    border: 1px solid black;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 #homeicon {
@@ -143,7 +128,7 @@ nav ul li {
     right: 2em;
     bottom: 5em;
     border-radius: 50%;
-    border: 5px solid rgba(15,82,155,0.7);
+    border: 5px solid #1a2930;
 }
 
 #menuicon {
@@ -175,9 +160,7 @@ a:link {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 10;
-}
-
-.dropdown-content ul {
+    padding: 0px;
     list-style-type: none;
 }
 

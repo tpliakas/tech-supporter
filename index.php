@@ -2,7 +2,7 @@
     $pageTitle = 'Homepage';
     include('includes/header.php');
 ?>   
-        <nav>
+        <nav class="col-xs-4">
             <ul>
                 <a href="inhouse.php"><li id="inhouse"><b>In House</b></li></a>
                 <hr>

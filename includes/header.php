@@ -13,10 +13,10 @@
     <body>
         <header>   
             <h1>
-                <a href="index.php"><img id="homeicon" src="images/home.png" alt="Home"></a>TechSupporter
-                <a href="adduser.html"><img id="usericon" src="images/add-user.png" alt="Add User"></a>
-                <a href="addtask.html"><img id="taskicon" src="images/add-task.png" alt="Add Task"></a>
-                <img id="menuicon" src="images/menuicon.png" onclick="myFunction()" alt="Menu"><ul id='dropdown' class='dropdown-content'>
+                <a href="index.php"><img id="homeicon" src="images/home.png" alt="Home" title="Homepage"></a>TechSupporter
+                <a href="adduser.html"><img id="usericon" src="images/add-user.png" alt="Add User" title="Add User"></a>
+                <a href="addtask.html"><img id="taskicon" src="images/add-task.png" alt="Add Task" title="Add Task"></a>
+                <img id="menuicon" src="images/menuicon.png" onclick="myFunction()" alt="Menu" title="Menu"><ul id='dropdown' class='dropdown-content'>
                 <li><a href='#'>Front Page</a></li>
                 <li ><a href="#">Exit</a></li>
                 </ul>
