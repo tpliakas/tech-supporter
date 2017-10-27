@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=greek');
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    background-color: #c5c1c0;
+}
+
+header {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0px; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    background-color: #1d2731;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    font-size: 1em;
+    font-weight: bold;
+    left: 0px;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-top: 8em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #1a2930;
+    color: #fff;
+    width: 20%;
+    display: inline-block;
+    padding: 15px 0px 15px 0px;
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        width: 100%;
+    }
+    h1 {
+        font-size: 1em;
+    }
+}
+
+nav ul li {
+    padding: 1em 1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.inhouse {
+    position: fixed;
+    margin-top: 8em;
+    text-align: center;
+    background-color: #331a00;
+    color: #fff;
+    width: 40%;
+    left: 30%;
+    display: inline-block;
+    padding: 0;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 15vh !important;
+    margin-bottom: .5vh;
+    color: #1a2930;
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+table td {
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+table th {
+    color: white;
+    background-color: #1a2930;
+    text-align: center;
+}
+
+#front {
+    width: 70%;
+    height: auto;
+}
+
+hr {
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+
+#datehr {
+    position: fixed;
+    border-top: 1px solid #1a2930;
+    margin-bottom: 0px; 
+    margin-top: 0px;
+    margin-left: 5%;
+    width: 90%;
+    bottom: 4em;
+}
+
+#date {
+    color: #1a2930;
+    position: fixed;
+    bottom: 0.5em;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 480px) {
+    #date {
+        font-size: 1em;
+    }
+}
+
+#mainimage {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: auto;
+    filter: brightness(80%);
+    box-shadow: 10px 10px 5px #888888;
+}
+
+#homeicon {
+    margin-right: 1em;
+    vertical-align:middle;
+}
+
+#usericon {
+    margin-left: 1em;
+    vertical-align:middle;
+}
+
+#taskicon {
+    margin-left: 1em;
+    vertical-align:middle;
+}
+
+#mapsicon {
+    position: fixed;
+    right: 2em;
+    bottom: 5em;
+    border-radius: 50%;
+    border: 5px solid #1a2930;
+}
+
+#menuicon {
+    margin-left: 1em;
+    vertical-align:middle;
+}
+
+@media screen and (max-width: 480px) {
+    #homeicon, #usericon, #taskicon, #mapsicon, #menuicon {
+        width: 10%;
+        height: auto;
+    }
+    #mainimage {
+        width: 80%;
+        height: auto;
+    }
+}
+
+form {
+    color: #fff;
+    text-align: center;
+}
+
+input {
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+input:focus {
+/*    outline: none !important;*/
+    border: 2px solid #1a2930;
+    box-shadow: 4px 4px 5px #1a2930;
+}
+
+textarea:focus {
+/*    outline: none !important;*/
+    border: 2px solid #1a2930;
+    box-shadow: 4px 4px 5px #1a2930;
+}
+
+.radioinput {
+    font-size: 1.2em;
+}
+.radiotext {
+    color: #1a2930;
+}
+
+.button {
+    background-color: #1a2930;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 45%;
+    font-size: .5em;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display:block;
+}
