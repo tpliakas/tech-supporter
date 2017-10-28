@@ -11,7 +11,7 @@
                 <a href="clients.php"><li id="clients"><b>Clients</b></li></a>
             </ul>
         </nav>
-        <img id="mainimage" src="images/bg.jpg" alt="Tech Supporter">  
+        <img id="mainimage" class="img-fluid" src="images/bg.jpg" alt="Tech Supporter">  
 <?php
     include('includes/footer.php');
 ?>

@@ -1,4 +1,4 @@
-        <a href="map.html"><img id="mapsicon" src="images/gmaps.png" alt="Map"></a>   
+        <a href="map.html"><img id="mapsicon" class="img-fluid" src="images/gmaps.png" alt="Map"></a>   
         <hr id="datehr">  
         <p id="date">
         <script>
