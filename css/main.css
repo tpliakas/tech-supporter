@@ -3,7 +3,9 @@
 body {
 
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1d2731;
     background-color: #c5c1c0;
 }
 
@@ -67,7 +69,7 @@ nav ul li {
 
 h2 {
     text-align: center;
-    margin-top: 15vh !important;
+    margin-top: 7vh !important;
     margin-bottom: .5vh;
     color: #1a2930;
     text-decoration: underline;
@@ -185,21 +187,24 @@ hr {
     }
 }
 
+/*
 form {
     color: #fff;
     text-align: center;
 }
+*/
 
+/*
 input {
     padding-bottom: 8px;
     padding-top: 8px;
 }
-
 input:focus {
-/*    outline: none !important;*/
     border: 2px solid #1a2930;
     box-shadow: 4px 4px 5px #1a2930;
 }
+*/
+
 
 textarea:focus {
 /*    outline: none !important;*/
