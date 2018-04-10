@@ -21,7 +21,7 @@ $result = mysqli_query( $conn, $query );
                 echo "<table class='table table-bordered'><tr><th>ID</th><th>FirstName</th><th>LastName</th><th>Address</th><th>No</th><th>PO code</th><th>Comments</th><th>Mobile No</th><th>Email</th></tr>";
 
                 while( $row = mysqli_fetch_assoc($result) ) {
-                    echo "<tr><td>". $row["id"] . "</td><td>". $row["firstname"] . "</td><td>". $row["lastname"] . "</td><td>" . $row["address"] . "</td><td>" . $row["number"] . "</td><td>" . $row["pocode"] . "</td><td>" . $row["comments"] . "</td><td>" . $row["mobile"] . "</td><td>" . $row["email"] . "</td></tr>";
+                    echo "<tr><td>". $row["clientid"] . "</td><td>". $row["firstname"] . "</td><td>". $row["lastname"] . "</td><td>" . $row["address"] . "</td><td>" . $row["number"] . "</td><td>" . $row["pocode"] . "</td><td>" . $row["comments"] . "</td><td>" . $row["mobile"] . "</td><td>" . $row["email"] . "</td></tr>";
                 }
 
                 echo "</table>";
@@ -30,7 +30,7 @@ $result = mysqli_query( $conn, $query );
                 echo "Whoops! No results.";
             }
 
-                mysqli_close($con);
+                mysqli_close($conn);
             ?>
         </div>
 <?php
