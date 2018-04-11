@@ -5,7 +5,7 @@
         <title>TechSupporter | On Site</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="shorcut icon" type="image/x-icon" href="images/favicon.png">
-        <link rel="stylesheet" href="secondary.css">
+        <link rel="stylesheet" href="css/secondary.css">
     </head>
     <body>
         <header>
@@ -21,7 +21,7 @@
         </header>
         <h2>On Site</h2>
         <?php
-            $con=mysqli_connect("localhost","root","","techsupporter");
+            $con=mysqli_connect("localhost","root","","techsup");
             // Check connection
             if (mysqli_connect_errno())
             {
