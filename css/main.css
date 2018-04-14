@@ -53,6 +53,10 @@ nav ul li {
     color: #fff;
 }
 
+.main-con {
+    margin-top: 50px;
+}
+
 .inhouse {
     position: fixed;
     margin-top: 8em;

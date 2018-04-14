@@ -10,11 +10,11 @@
     <body>
         <header>
             <h1>
-                <a href="index.html"><img id="homeicon" src="images/home.png" alt="Home"></a>TechSupporter
-                <a href="adduser.html"><img id="usericon" src="images/add-user.png" alt="Add User"></a>
-                <a href="addtask.html"><img id="taskicon" src="images/add-task.png" alt="Add Task"></a>
+                <a href="index.php"><img id="homeicon" src="images/home.png" alt="Home"></a>TechSupporter
+                <a href="adduser.php"><img id="usericon" src="images/add-user.png" alt="Add User"></a>
+                <a href="addtask.php"><img id="taskicon" src="images/add-task.png" alt="Add Task"></a>
                 <img id="menuicon" src="images/menuicon.png" alt="Menu"><ul  class='dropdown-content'>
-                <li><a href='index.html'>Front Page</a></li>
+                <li><a href='index.php'>Front Page</a></li>
                 <li ><a href="#">Exit</a></li>
                 </ul>
             </h1>

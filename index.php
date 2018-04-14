@@ -2,7 +2,7 @@
     $pageTitle = 'Homepage';
     include('includes/header.php');
 ?>   
-    <div class="container">
+    <div class="container main-con">
         <div class="row">
             <nav class="col-xs-12">
                 <ul>
